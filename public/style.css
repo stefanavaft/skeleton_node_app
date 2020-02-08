@@ -1,0 +1,37 @@
+body{
+    margin: 0 auto;
+    padding: 5px;
+    display: grid;
+}
+
+#container__1{
+    background-color: rgb(236, 234, 231);
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+}
+
+#btn_1 {
+    border: solid rgb(22, 22, 22) 3px;
+    background: rgb(114, 114, 113);
+    outline: none;
+    height: 60%;
+    font-size: 20px;
+    color: rgb(10, 10, 10); 
+    width: 250px;
+    height: 30px;
+    margin: 40px;
+    border-radius: 20px;
+}
+.character{
+    text-align: center;
+}
+#container__2{
+    display: grid;
+    grid-template-columns: subgrid;
+}
+
+select {
+    font-size: .9rem;
+    padding: 2px 5px;
+}
