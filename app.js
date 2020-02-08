@@ -8,13 +8,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));                
 
 app.get('/', (req, res) => {
-  request("https://pokeapi.co/api/v2/pokemon/", function (error, response, body) {
-    console.error('error:', error); 
-    console.log('statusCode:', response && response.statusCode);
-    const parsedData = JSON.parse(body);
-    console.log(parsedData["name"]); 
-    console.log(parsedData.results);
-    res.render("index")
+  request("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=20", function (error, response, body) {
+    if(!error && response.statusCode == 200){
+      const countData = JSON.parse(body)
+      res.render("index", {countData: countData});
+    }
   });
 });    
 
