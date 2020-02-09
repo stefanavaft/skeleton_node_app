@@ -25,9 +25,26 @@
         </div>
       </div>
       <div id="container__2">
-        <% countData["results"].forEach(function(Pokemon) { %>
-          <li><%= Pokemon["name"] %></li>
-        <% }) %>
+        <table id="myTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Number</th>
+              <th>Base experience</th>
+              <th>Height</th>
+            </tr>
+          </thead>
+          <tbody id="pokeData">
+            <tr>
+              <td>
+                <% countData["results"].forEach(function(Pokemon) { %>
+                  <li><%= Pokemon["name"] %></li>
+                <% }) %>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
     </form>
     <script src="main.js"></script>
   </body>
