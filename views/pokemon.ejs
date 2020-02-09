@@ -7,10 +7,8 @@
 </head>
 <body>
     <h1>Bulbasaur content</h1>
-    <% results["abilities"].forEach(function(pokeInfo){%>
+    <% results["game_indices"].forEach(function(pokeInfo){%>
         <li><%= pokeInfo["name"] %></li>
         <% }) %>
 </body>
 </html>
-
-<!-- ["abilities"][0]["name"][2]["base_experience"][0]["game_indices"][0]["game_index"] -->
