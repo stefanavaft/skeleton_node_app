@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eunice_TaskII</title>
+    <title>Eunice_taskII</title>
 </head>
 <body>
     <h1>Bulbasaur content</h1>
-    <% results["game_indices"].forEach(function(pokeInform){%>
-        <li><%= pokeInform["name"] %></li>
+    <% gameData["stats"].forEach(function(pokeInform) { %>
+        <li>Stats are: <%= pokeInform["base_stat"] %></li>
+        <br>
+        <li>Efforts are: <%=pokeInform["effort"] %></li>
         <% }) %>
+
+
 </body>
 </html>
