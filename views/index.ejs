@@ -29,16 +29,13 @@
           <thead>
             <tr>
               <th>Name</th>
-              <th>Number</th>
-              <th>Base experience</th>
-              <th>Height</th>
             </tr>
           </thead>
           <tbody id="pokeData">
             <tr>
               <td>
                 <% countData["results"].forEach(function(Pokemon) { %>
-                  <li><%= Pokemon["name"] %> - <%= Pokemon["url"] %></li>
+                  <li><%= Pokemon["name"] %> </li>
                 <% }) %>
               </td>
             </tr>

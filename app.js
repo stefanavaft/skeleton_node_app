@@ -23,7 +23,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/bulbasaur', function (req, res){
-  request("https://pokeapi.co/api/v2/pokemon/1/", function(error, response, body){
+  request("https://pokeapi.co/api/v2/pokemon/bulbasaur", function(error, response, body){
   if(!error && response.statusCode == 200){
     const results = JSON.parse(body)
     res.render("pokemon", {results: results});

@@ -23,9 +23,9 @@ body{
     margin: 40px;
     border-radius: 20px;
 }
-.character{
+/* .character{
     text-align: center;
-}
+} */
 #container__2{
     display: grid;
     grid-template-columns: subgrid;
