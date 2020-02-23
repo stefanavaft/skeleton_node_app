@@ -13,35 +13,14 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" alt="logo" width="300" height="100">
           </h1>
         </div>
-        <div>
-          <button id="btn_1">
-            <img src="https://www.freeiconspng.com/uploads/refresh-icon-25.png" alt="poke-symbol" width="20" height="20">
-            Surprise!
-          </button>
-          <button id="btn_1">
-            <img src="https://cdn.pixabay.com/photo/2019/11/27/14/06/pokemon-4657023_960_720.png" alt="poke-symbol" width="20" height="20">
-            Lowest number
-          </button>
         </div>
       </div>
-      <div id="container__2">
-        <table id="myTable">
-          <thead>
-            <tr>
-              <th>Name</th>
-            </tr>
-          </thead>
-          <tbody id="pokeData">
-            <tr>
-              <td>
-                <% countData["results"].forEach(function(Pokemon) { %>
-                  <li><%= Pokemon["name"] %> </li>
-                <% }) %>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        </div>
+      <div id="container__2">      
+        <h1>Name - URL</h1>
+          <% countData["results"].forEach(function(Pokemon) { %>
+            <li><%= Pokemon["name"] %> - <%= Pokemon["url"] %></li>
+          <% }) %>
+      </div>
     </form>
     <script src="main.js"></script>
   </body>
