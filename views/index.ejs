@@ -15,10 +15,10 @@
         </div>
         </div>
       </div>
-      <div id="container__2">        
+      <div id="container__2">      
         <h1>Name - URL</h1>
           <% countData["results"].forEach(function(Pokemon) { %>
-            <li><%= Pokemon["name"] %> - </li>
+            <li><%= Pokemon["name"] %> - <%= Pokemon["url"] %></li>
           <% }) %>
       </div>
     </form>
