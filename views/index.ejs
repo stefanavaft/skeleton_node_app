@@ -21,7 +21,15 @@
             <li><%= Pokemon["name"] %> - <%= Pokemon["url"] %></li>
           <% }) %>
         </div>
+        <p id="selected_poke"></p>
       </div>
+      <br>
+      <div>
+        <input type="text" id="searchPoke" placeholder="search pokemon" name="search">
+        <br>
+        <button id="clickMe">Submit</button>
+      </div>
+      <div id="name"></div>
     </form>
     <script src="main.js"></script>
   </body>
