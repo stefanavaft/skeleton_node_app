@@ -14,12 +14,13 @@
           </h1>
         </div>
         </div>
-      </div>
-      <div id="container__2">      
+      <div id="container__2">
         <h1>Name - URL</h1>
+        <div id="mainData">      
           <% countData["results"].forEach(function(Pokemon) { %>
             <li><%= Pokemon["name"] %> - <%= Pokemon["url"] %></li>
           <% }) %>
+        </div>
       </div>
     </form>
     <script src="main.js"></script>
