@@ -3,12 +3,35 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Skeleton Application</title>
-  <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+  <title>Heroku usage reporter</title>
+  <link rel="stylesheet" type="text/css" href="../public/css/style.scss">
 </head>
 
 <body>
-  <h1>Hello World!</h1>
+  <h1>Heroku usage in IP </h1>
+  <p>Start month: <input type="number" class="dateInput month" id="startMonth" value=""/> Start year: <input type="number" class="dateInput year" id="startYear" value=""/></p>
+  <p>End month: <input type="number" class="dateInput month" id="endMonth" value=""/> End year: <input type="number" class="dateInput year" id="endYear" value=""/></p>
+
+  <div>
+    <button id="refresh-data">Refresh data</button>
+    <button id="toggle-table">Toggle table</button>
+  </div>  
+
+    <table id="usageTable">
+      <thead>
+        <tr>
+          <td>App</td>
+          <td>Dynos</td>
+          <td>Addons</td>
+          <td>Total</td>
+        </tr>
+      </thead>
+      <tbody id="usageTableBody">
+      </tbody>
+    </table>
+
+  <canvas id="herokUsage" width="100" height="70"></canvas>
+
   <script src="../public/js/main.js"></script>
 </body>
 
