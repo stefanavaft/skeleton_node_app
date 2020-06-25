@@ -1,12 +1,12 @@
 {
-  "name": "my-weather-app101",
+  "name": "skeleton-node-app",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "parcel ./views/index.hbs",
+    "start": "parcel ./index.hbs",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": " parcel build ./views/index.hbs"
+    "build": " parcel build ./index.hbs"
   },
   "author": "",
   "license": "ISC",
